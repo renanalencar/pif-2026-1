@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define TAM 6
+#define TAM 6 // Constante
 
 int main() {
     int pares[TAM], impares[TAM];
