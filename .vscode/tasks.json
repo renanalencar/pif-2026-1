@@ -8,6 +8,8 @@
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
+				"-Wall",
+				"-Wextra",
 				"${file}",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}"
@@ -26,11 +28,36 @@
 		},
 		{
 			"type": "cppbuild",
+			"label": "C/C++: gcc build active file with nanlib",
+			"command": "/usr/bin/gcc",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-Wall",
+				"-Wextra",
+				"${file}",
+				"${fileDirname}/nanlib.c",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/gcc (with nanlib.c)"
+		},
+		{
+			"type": "cppbuild",
 			"label": "C/C++: gcc.exe build active file",
 			"command": "C:\\ProgramData\\chocolatey\\bin\\gcc.exe",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
+				"-Wall",
+				"-Wextra",
 				"${file}",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
@@ -43,6 +70,29 @@
 			],
 			"group": "build",
 			"detail": "compiler: C:\\ProgramData\\chocolatey\\bin\\gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe build active file with nanlib",
+			"command": "C:\\ProgramData\\chocolatey\\bin\\gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-Wall",
+				"-Wextra",
+				"${file}",
+				"${fileDirname}\\nanlib.c",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\ProgramData\\chocolatey\\bin\\gcc.exe (with nanlib.c)"
 		}
 	]
 }
