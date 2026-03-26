@@ -6,9 +6,6 @@ int main() {
     char frase[50], fraseCriptografada[50];
     printf("Digite uma frase a ser criptografada: ");
     fgets(frase, sizeof(frase), stdin);
-    
-    /* Remove trailing newline from fgets */
-    frase[strcspn(frase, "\n")] = '\0';
 
     // Converte todas as letras para MAIUSCULO
     // strupr(frase); // DESCOMENTE esta linha para compilar no Windows
@@ -22,7 +19,7 @@ int main() {
     nan_strrev(fraseCriptografada); // COMENTE esta linha para compilar no Windows
 
     // Substitui as consoantes por #
-    for(size_t i = 0; i < strlen(fraseCriptografada); i++) {
+    for(int i = 0; i < strlen(fraseCriptografada); i++) {
         if (fraseCriptografada[i] == 'A' || fraseCriptografada[i] == 'E' || 
             fraseCriptografada[i] == 'I' || fraseCriptografada[i] == 'O' ||
             fraseCriptografada[i] == 'U' || fraseCriptografada[i] == ' ')
