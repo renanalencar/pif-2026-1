@@ -10,16 +10,23 @@ obj/
 build/
 
 .DS-store
+src/exercicios_propostos/ascencio_p93_q23a
+src/exercicios_propostos/ascencio_p93_q23b
+src/exercicios_propostos/ascencio_p150_q24
+src/exercicios_propostos/ascencio_p150_q25
 src/exercicios_propostos/ascencio_p190_q1a
 src/exercicios_propostos/ascencio_p190_q2a
 src/exercicios_propostos/ascencio_p249_q1a
+src/exercicios_propostos/ascencio_p413_q3
+src/exercicios_propostos/ascencio_p413_q2
+src/exercicios_propostos/ascencio_p329_q1a
+
 src/lista_exercicios/lista_1/l1_q5
 src/lista_exercicios/lista_1/l1_q4
 src/lista_exercicios/lista_1/l1_q3
 src/lista_exercicios/lista_1/l1_q2
 src/lista_exercicios/lista_1/l1_q1
-src/exercicios_propostos/ascencio_p413_q3
-src/exercicios_propostos/ascencio_p413_q2
+
 .gitignore
 src/exemplos/exemplo_struct
-src/exercicios_propostos/ascencio_p329_q1a
+
