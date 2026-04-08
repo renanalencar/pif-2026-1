@@ -7,7 +7,7 @@ int main() {
 
     printf("Entre com os litros consumidos (-1 para finalizar): ");
     scanf("%f%*c", &litros);
-
+    
     while (litros != -1) {
         printf("Entre com os km percorridos: ");
         scanf("%f%*c", &km);

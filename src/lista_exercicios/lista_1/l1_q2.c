@@ -9,9 +9,12 @@
 
 int main() {
     int x = 3, y = 2;
-    // Solução
+    // Solução 1
     printf ("%d", (x + y));
-    
+    // Solução 2
+    printf ("\n%d", (x*x + y));
+    // Solução 3
+    printf ("\n%d", (x*x + y));
     return 0;
 }
 
