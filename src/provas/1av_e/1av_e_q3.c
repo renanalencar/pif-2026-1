@@ -1,9 +1,23 @@
 #include <stdio.h>
+
 int main()
 {
-    int a[][4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-    int i;
-    for (i = 0; i < 3; ++i)
-        printf("%d", a[i][i+1]);
-	return 0;
+    int i, j, s, m[5][5];
+    for (i = 0; i < 5; i++)
+    {
+        for (j = 0; j < 5; j++)
+        {
+            if (i == j)
+            {
+                m[i][i] = 2;
+            }
+            else
+            {
+                m[i][j] = 1;
+            }
+            s += m[i][j];
+        }
+    }
+    printf("s:%d\n", s);
+    return 0;
 }

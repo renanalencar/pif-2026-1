@@ -2,9 +2,11 @@
 
 int main()
 {
-    int a[][4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-    int i;
-    for (i = 0; i < 3; ++i)
-        printf("%d", a[i][i+1]);
-	return 0;
+    int x, y, z, tab[2][3];
+    for (x = 0; x < 2; ++x)
+        for (y = 0; y < 3; ++y)
+            tab[x][y] = (x * 3) + y + 1;
+    z = tab[0][1] * tab[1][2];
+    printf("z: %d\n", z);
+    return 0;
 }

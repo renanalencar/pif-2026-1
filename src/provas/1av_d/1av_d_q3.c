@@ -1,9 +1,22 @@
 #include <stdio.h>
-int main()
+
+int main(void)
 {
-    int a[][4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-    int i;
-    for (i = 0; i < 3; ++i)
-        printf("%d", a[i][i+1]);
-	return 0;
+    int mat[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}};
+    int i, j, soma = 0;
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            if (i + j == 2)
+            {
+                soma += mat[i][j];
+            }
+        }
+    }
+    printf("%d", soma);
+    return 0;
 }

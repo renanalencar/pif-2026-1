@@ -1,4 +1,12 @@
-char str1[4] = "alo", str2[4] = "al";
-if (strcmp(str1, str2) == 0) printf("Igual");
-if (strcmp(str1, str2) < 0) printf("Str1 Menor");
-if (strcmp(str1, str2) > 0) printf("Str1 Maior");
+#include <stdio.h>
+int main(void)
+{
+    char palavra[] = "Concurso";
+    int cont = 0;
+    while (palavra[cont] != '\0')
+    {
+        cont++;
+    }
+    printf("%d\n", cont);
+    return 0;
+}

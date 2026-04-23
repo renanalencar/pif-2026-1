@@ -20,11 +20,3 @@ int main(void) {
     
     return 0;
 }
-
-/**
- * A condição do primeiro `if` é falsa `((5 > 3 && 10 < 10) || !(15 == 15) = (true && false) || false = false || false = false)`. 
- * A condição do `else if` é verdadeira `(5 == 5 && (10 > 5 || 15 < 10) = true && (true || false) = true)`. 
- * Logo, `resultado = 2` é impresso.
- * 
- * **Resposta: c. 2**
- */
