@@ -23,6 +23,7 @@ void systemPause() {
 int main()
 {
     struct cliente cli;
+    struct recebimento rec;
     FILE *arqClientes, *arqRecebimentos;
     arqClientes = fopen("input/clientes.dat", "rb+");
     arqRecebimentos = fopen("input/recebimentos.dat", "rb+");
@@ -55,12 +56,32 @@ int main()
     printf("\nTelefone: ");
     gets(cli.tel);
 
+    printf("\nNúmero Documento: ");
+    scanf("%d%*c", &rec.numDoc);
+    printf("\nValor: ");
+    scanf("%f%*c", &rec.valorDoc);
+    printf("\nData de Emissão (dd/MM/AAAA): ");
+    gets(rec.dataEmissao);
+    printf("\nData de Vencimento (dd/MM/AAAA): ");
+    gets(rec.dataVencimento);
+    printf("\nCódigo do Cliente: ");
+    scanf("%d%*c", &rec.codCli);
+
+
     fwrite(&cli, sizeof(struct cliente), 1, arqClientes);
     if (ferror(arqClientes))
     {
         printf("\nErro ao gravar no arquivo clientes.dat! Tente novamente.");
     } else {
         printf("\nDados gravados com sucesso em clientes.dat!");
+    }
+
+    fwrite(&rec, sizeof(struct recebimento), 1, arqRecebimentos);
+    if (ferror(arqRecebimentos))
+    {
+        printf("\nErro ao gravar no arquivo recebimentos.dat! Tente novamente.");
+    } else {
+        printf("\nDados gravados com sucesso em recebimento.dat!");
     }
     
     fclose(arqClientes);
