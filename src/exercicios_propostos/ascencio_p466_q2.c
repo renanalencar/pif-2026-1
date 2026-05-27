@@ -76,7 +76,30 @@ int main()
         }
     }
     cli = cadastraCliente();
+
+    // TODO: criar função de buscaCliente passando
+    // como parametros o código do cliente e o ponteiro
+    // para o arquivo arqClientes
+    while (!feof(arqClientes))
+    {
+        printf("Digite código do cliente para cadastrar recebimento: ");
+        scanf("%d%*c", &cli.codCli);
+        struct cliente temp;
+        fread(&temp, sizeof(struct cliente), 1, arqClientes);
+        if (cli.codCli == temp.codCli)
+        {
+            rec = cadastraRecebimento();
+        }
+    }
+    if (feof(arqClientes))
+    {
+        printf("Cliente não cadastrado!\n");
+        // rewind(arqClientes);
+    }
     
+    
+    rec = cadastraRecebimento();
+
     fwrite(&cli, sizeof(struct cliente), 1, arqClientes);
     if (ferror(arqClientes))
     {
