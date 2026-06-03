@@ -9,7 +9,7 @@ int main()
     };
     FILE *cli;
     struct cliente c;
-    cli = fopen("input/clientes.dat", "a+");
+    cli = fopen("input/clientes_ex.dat", "ab+");
     if (cli == NULL)
         printf("\nErro na abertura do arquivo.");
     else

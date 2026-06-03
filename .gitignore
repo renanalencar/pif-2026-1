@@ -30,3 +30,12 @@ src/lista_exercicios/lista_1/l1_q1
 src/exemplos/exemplo_struct
 
 data/
+.DS_Store
+src/exemplos/arquivos/exemplo_fread
+src/exemplos/arquivos/exemplo_fwrite
+src/exemplos/arquivos/exemplo_rewind
+tasks/alencar_arquivo_e1
+tasks/alencar_arquivo_e2
+tasks/alencar_arquivo_e3
+tasks/alencar_arquivo_e4
+tasks/alencar_arquivo_e5
