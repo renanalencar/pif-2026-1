@@ -1,5 +1,4 @@
-/*Copiando uma string usando a notação de array
-e a notação de ponteiro */
+/*Copiando uma string usando a notação de array e a notação de ponteiro */
 #include <stdio.h>
 #include <string.h>
 
