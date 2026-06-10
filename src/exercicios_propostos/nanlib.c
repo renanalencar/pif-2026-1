@@ -66,3 +66,8 @@ char* nan_strrev(char *str) {
     
     return str;
 }
+
+void systemPause() {
+    printf("\nPressione qualquer tecla para continuar...");
+    getchar();
+}

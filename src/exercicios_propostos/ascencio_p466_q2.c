@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "nanlib.h"
 
 struct cliente {
     int codCli;
@@ -15,10 +16,10 @@ struct recebimento {
     int codCli;
 };
 
-void systemPause() {
-    printf("\nPressione qualquer tecla para continuar...");
-    getchar();
-}
+// void systemPause() {
+//     printf("\nPressione qualquer tecla para continuar...");
+//     getchar();
+// }
 
 struct cliente cadastraCliente() {
     struct cliente cliCadastro;

@@ -39,3 +39,9 @@ tasks/alencar_arquivo_e2
 tasks/alencar_arquivo_e3
 tasks/alencar_arquivo_e4
 tasks/alencar_arquivo_e5
+src/exemplos/ponteiros/deitel_cap7_array
+src/exemplos/ponteiros/deitel_cap7_func_ref
+src/exemplos/ponteiros/deitel_cap7_inicializacao
+src/exemplos/ponteiros/deitel_cap7_string
+src/exemplos/ponteiros/deitel_cap7_func_ref_array
+src/exemplos/ponteiros/deitel_cap7_string_array

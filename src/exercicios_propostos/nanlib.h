@@ -12,4 +12,5 @@
 
 char* nan_strupr(char *str);
 char* nan_strrev(char *str);
+void systemPause();
 #endif
