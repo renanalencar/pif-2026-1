@@ -28,6 +28,12 @@ void gravaAlunos(struct Aluno vetor[], int quantidade)
     fclose(arq);
 }
 
+// Gabarito esperado:
+
+// struct corretamente definida.
+// Função com fopen, fprintf e fclose.
+// Exemplo de chamada com vetor de alunos e quantidade.
+
 int main(void)
 {
     struct Aluno turma[2] = {

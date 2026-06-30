@@ -16,3 +16,9 @@ int main(void)
     printf("%d", fatorial(n));
     return 0;
 }
+
+// Gabarito esperado:
+
+// A função deve ser recursiva.
+// Caso-base: n <= 1.
+// Caso recursivo: n * fatorial(n - 1).

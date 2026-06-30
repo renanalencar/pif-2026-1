@@ -14,3 +14,14 @@ int main(void)
     printf("%s", texto);
     return 0;
 }
+
+// Questão 2
+// Resposta: C. coso
+
+// Justificativa:
+
+// A string inicial é "casa".
+// O laço percorre os caracteres até '\0'.
+// Cada 'a' é substituído por 'o'.
+
+// Resultado final: "coso", portanto a alternativa correta é C.
