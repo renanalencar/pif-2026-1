@@ -23,3 +23,25 @@ int main()
 
     return 0;
 }
+
+// int main(void)
+// {
+//     char *nomes[] = {"Ana", "Bruno", "Carla", "Diego", "Eva"};
+
+//     for (int i = 0; i < 5; i++)
+//     {
+//         printf("%s\n", nomes[i]);
+//     }
+
+//     char *temp = nomes[1];
+//     nomes[1] = nomes[3];
+//     nomes[3] = temp;
+
+//     printf("\nDepois da troca:\n");
+//     for (int i = 0; i < 5; i++)
+//     {
+//         printf("%s\n", nomes[i]);
+//     }
+
+//     return 0;
+// }

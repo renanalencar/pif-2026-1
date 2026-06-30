@@ -23,3 +23,17 @@ int main()
     
     return 0;
 }
+
+// int main(void)
+// {
+//     int v[10] = {2, 6, 4, 8, 10, 12, 89, 68, 45, 37};
+//     int *p = v;
+
+//     while (p < v + 10)
+//     {
+//         printf("%d ", *p);
+//         p++;
+//     }
+//     printf("\n");
+//     return 0;
+// }
